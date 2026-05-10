@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>80th Birthday Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f7f0f0;
+    font-family:'Cormorant Garamond', serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:15px;
+}
+
+/* Main Card */
+
+.card{
+    width:100%;
+    max-width:850px;
+    background:#fffaf7;
+    border:3px solid #d6ad63;
+    padding:50px 25px;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    border-radius:20px;
+}
+
+/* Floral Decoration */
+
+.card::before,
+.card::after{
+    content:"🌸";
+    position:absolute;
+    font-size:120px;
+    opacity:0.15;
+}
+
+.card::before{
+    top:10px;
+    left:10px;
+}
+
+.card::after{
+    bottom:10px;
+    right:10px;
+}
+
+/* Heading */
+
+.invite-text{
+    color:#5a1b38;
+    font-size:clamp(16px,2vw,28px);
+    letter-spacing:2px;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.grand{
+    font-size:clamp(35px,5vw,65px);
+    color:#4d1031;
+    margin-top:20px;
+    font-weight:600;
+}
+
+/* Number */
+
+.number-section{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.number{
+    font-size:clamp(100px,18vw,220px);
+    line-height:1;
+    font-weight:700;
+    color:#d4a03d;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.th{
+    font-size:clamp(35px,6vw,70px);
+    color:#b8862b;
+    margin-top:25px;
+    font-style:italic;
+}
+
+/* Birthday Text */
+
+.birthday{
+    font-family:'Great Vibes', cursive;
+    font-size:clamp(60px,12vw,150px);
+    color:#4d1031;
+    line-height:1;
+    margin-top:-15px;
+}
+
+.celebration{
+    font-size:clamp(24px,4vw,52px);
+    letter-spacing:5px;
+    color:#4d1031;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+/* Name Box */
+
+.name-box{
+    display:inline-block;
+    border:3px solid #d6ad63;
+    border-radius:20px;
+    padding:15px 25px;
+    margin:25px 0;
+    background:white;
+}
+
+.name-box h1{
+    color:#4d1031;
+    font-size:clamp(34px,6vw,70px);
+    font-weight:600;
+}
+
+/* Description */
+
+.description{
+    max-width:700px;
+    margin:auto;
+    color:#4d1031;
+    font-size:clamp(20px,3vw,38px);
+    line-height:1.4;
+    margin-bottom:40px;
+}
+
+/* Information Section */
+
+.info-section{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.info-box{
+    flex:1 1 220px;
+    border-left:2px solid #d6ad63;
+    border-right:2px solid #d6ad63;
+    padding:15px;
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.info-title{
+    color:#c04d7d;
+    font-size:clamp(22px,3vw,38px);
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.info-text{
+    color:#2d1a1a;
+    font-size:clamp(20px,2.5vw,32px);
+    line-height:1.3;
+}
+
+.info-text a{
+    text-decoration:none;
+    color:#2d1a1a;
+    transition:0.3s;
+}
+
+.info-text a:hover{
+    color:#c04d7d;
+}
+
+/* Footer */
+
+.footer{
+    color:#4d1031;
+    font-size:clamp(22px,3vw,38px);
+    line-height:1.5;
+    margin-top:20px;
+}
+
+.footer-bottom{
+    margin-top:25px;
+    color:#c04d7d;
+    font-size:clamp(24px,4vw,42px);
+    font-weight:700;
+}
+
+.footer-bottom span{
+    display:block;
+    color:#4d1031;
+    font-size:clamp(32px,5vw,58px);
+}
+
+/* Mobile Responsive */
+
+@media(max-width:600px){
+
+    .card{
+        padding:35px 18px;
+    }
+
+    .info-section{
+        flex-direction:column;
+    }
+
+    .info-box{
+        border-left:none;
+        border-right:none;
+        border-top:2px solid #d6ad63;
+        border-bottom:2px solid #d6ad63;
+    }
+
+    .birthday{
+        margin-top:-5px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Top Heading -->
+
+    <div class="invite-text">
+        YOU ARE CORDIALLY INVITED TO CELEBRATE
+    </div>
+
+    <div class="grand">A Grand</div>
+
+    <!-- 80 -->
+
+    <div class="number-section">
+        <div class="number">80</div>
+        <div class="th">th</div>
+    </div>
+
+    <!-- Birthday -->
+
+    <div class="birthday">Birthday</div>
+
+    <div class="celebration">CELEBRATION</div>
+
+    <!-- Name -->
+
+    <div class="name-box">
+        <h1>Sulbha Deorukhkar</h1>
+    </div>
+
+    <!-- Description -->
+
+    <div class="description">
+        Come join us as we celebrate a beautiful journey of 80 years filled with love, blessings and wonderful memories.
+    </div>
+
+    <!-- Info Section -->
+
+    <div class="info-section">
+
+        <!-- Date -->
+
+        <div class="info-box">
+            <div class="icon">📅</div>
+
+            <div class="info-title">DATE</div>
+
+            <div class="info-text">
+                17 MAY 2026<br>
+                (SUNDAY)
+            </div>
+        </div>
+
+        <!-- Time -->
+
+        <div class="info-box">
+            <div class="icon">🕕</div>
+
+            <div class="info-title">TIME</div>
+
+            <div class="info-text">
+                6:00 PM<br>
+                ONWARDS
+            </div>
+        </div>
+
+        <!-- Venue -->
+
+        <div class="info-box">
+            <div class="icon">📍</div>
+
+            <div class="info-title">VENUE</div>
+
+            <div class="info-text">
+
+                <a href="https://maps.google.com/?q=Gold+Star+Party+Hall+Santacruz+East+Mumbai"
+                   target="_blank">
+
+                    GOLD STAR PARTY HALL<br>
+                    Near Hotel Vihar,<br>
+                    Nehru Road,<br>
+                    Santacruz (East),<br>
+                    Mumbai - 400055
+
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        Your presence will make this celebration truly special and memorable.
+    </div>
+
+    <div class="footer-bottom">
+        WE LOOK FORWARD TO
+        <span>CELEBRATING WITH YOU!</span>
+    </div>
+
+</div>
+
+</body>
+</html>
